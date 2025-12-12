@@ -3,51 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo en Jamaica</title>
+    <title>Jamaica - Tu destino turístico en el Caribe</title>
+    <meta name="description" content="Descubre Jamaica, el paraíso caribeño. Playas, cultura rastafari, música reggae y mucho más te esperan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-
-    <header>
-        <h1>welcome to Jamaica</h1>
-        <p>Playas, cultura, música y aventuras únicas</p>
-    </header>
-
-    <nav>
-        <a href="#destinos">Destinos</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#contacto">Contacto</a>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://ik.imagekit.io/luciasanz/JAMAICA%20logo%20___.png" alt="Jamaica Tourism Logo">
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="información.html" class="nav-link">Información</a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
     </nav>
 
-    <section class="seccion" id="destinos">
-        <h2>Destinos Populares</h2>
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://ik.imagekit.io/luciasanz/jamaica%20video%20mola%20mas.mov" type="video/quicktime">
+            <source src="https://ik.imagekit.io/luciasanz/jamaica%20video%20mola%20mas.mov" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <img src="https://ik.imagekit.io/luciasanz/pngblanco.png" alt="Jamaica Island Shape" class="hero-shape">
+        </div>
+    </header>
 
-        <div class="destinos">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="Montego Bay">
-                <h3>Montego Bay</h3>
-            </div>
+    <section class="cta-section">
+        <div class="container">
+            <h1 class="cta-title">Descubre el ritmo, la calidez y la magia de Jamaica</h1>
+            <p class="cta-text">Un paraíso donde el reggae fluye con la brisa del mar, las playas doradas te esperan y la hospitalidad jamaicana te hará sentir como en casa.</p>
+            <a href="actividades.html" class="btn-primary">Planea tu Viaje</a>
+        </div>
+    </section>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Negril">
-                <h3>Negril</h3>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147" alt="Ocho Ríos">
-                <h3>Ocho Ríos</h3>
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Explora Jamaica</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://ik.imagekit.io/luciasanz/jamaicafest.jpg" alt="Festival Jamaicano">
+                    <div class="gallery-overlay">
+                        <span>Festival cultural</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ik.imagekit.io/luciasanz/montan%CC%83ajamaica.jpg" alt="Montañas de Jamaica">
+                    <div class="gallery-overlay">
+                        <span>Paisaje montañoso</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ik.imagekit.io/luciasanz/vandera%20jamaica.jpg" alt="Bandera de Jamaica">
+                    <div class="gallery-overlay">
+                        <span>Orgullo jamaicano</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ik.imagekit.io/luciasanz/comida%20jamaicana.jpg" alt="Comida Jamaicana">
+                    <div class="gallery-overlay">
+                        <span>Gastronomía local</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ik.imagekit.io/luciasanz/8e.jpg" alt="Cultura Rastafari">
+                    <div class="gallery-overlay">
+                        <span>Cultura Rastafari</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="seccion" id="actividades">
-        <h2>Actividades</h2>
-        <p>Explora cascadas, nada en aguas cristalinas, disfruta del reggae y vive la magia de Jamaica.</p>
+    <section class="tshirts-section">
+        <div class="container">
+            <h2 class="section-title">Ayúdanos a mejorar tu experiencia</h2>
+            <p class="section-subtitle">Compra nuestras camisetas solidarias y ayuda a la Asociación de Turistas de Jamaica a seguir promoviendo este maravilloso destino.</p>
+        </div>
+        
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami2.avif.jpg" alt="Camiseta Jamaica 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami6.jpg" alt="Camiseta Jamaica 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami2.avif.jpg" alt="Camiseta Jamaica 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami4.jpg" alt="Camiseta Jamaica 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami%203.jpg" alt="Camiseta Jamaica 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami2.avif.jpg" alt="Camiseta Jamaica 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami6.jpg" alt="Camiseta Jamaica 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami2.avif.jpg" alt="Camiseta Jamaica 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami4.jpg" alt="Camiseta Jamaica 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ik.imagekit.io/luciasanz/cami%203.jpg" alt="Camiseta Jamaica 5">
+                </div>
+            </div>
+        </div>
+
+         <p class="section-subtitle">Este 2026 Usain Bolt se une a la asociación Welcome to Jamaica, vive tu experiecia tal como nuestra estrella. </p>
+
+        <div class="container">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="https://ik.imagekit.io/luciasanz/jamaica.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="jamaica-png-container">
+            <img src="https://ik.imagekit.io/luciasanz/jamaica%20tipo%20png.png" alt="Jamaica" class="floating-image">
+        </div>
     </section>
 
-    <footer id="contacto">
-        <p>© 2025 Turismo Jamaica - Todos los derechos reservados</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 turismo jamaica. Welcome to jamaica.</p>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

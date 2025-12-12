@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Jamaica Tourism</title>
+    <meta name="description" content="Información sobre el clima, huracanes y la mejor época para visitar Jamaica.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://ik.imagekit.io/luciasanz/JAMAICA%20logo%20___.png" alt="Jamaica Tourism Logo">
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="información.html" class="nav-link active">Información</a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Información sobre Jamaica</h1>
+            <p>Todo lo que necesitas saber sobre el clima, huracanes y la mejor época para visitar Jamaica.</p>
+        </div>
+    </header>
+
+    <section class="chart-section">
+        <div class="container">
+            <div class="chart-container">
+                <canvas id="hurricaneChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather-section">
+        <div class="container">
+            <h2 class="section-title">Planifica ya tu viaje.
+                Te damos el pronóstico del Tiempo 2026.
+            ¡No tienes escusas!</h2>
+            <div class="weather-grid">
+                <div class="weather-card">
+                    <h3>Enero</h3>
+                    <p class="weather-temp">26°C</p>
+                    <p class="weather-rain">Lluvia: Baja</p>
+                </div>
+                <div class="weather-card">
+                    <h3>Febrero</h3>
+                    <p class="weather-temp">27°C</p>
+                    <p class="weather-rain">Lluvia: Baja</p>
+                </div>
+                <div class="weather-card">
+                    <h3>Marzo</h3>
+                    <p class="weather-temp">28°C</p>
+                    <p class="weather-rain">Lluvia: Baja</p>
+                </div>
+                <div class="weather-card">
+                    <h3>Abril</h3>
+                    <p class="weather-temp">29°C</p>
+                    <p class="weather-rain">Lluvia: Media</p>
+                </div>
+                <div class="weather-card">
+                    <h3>Mayo</h3>
+                    <p class="weather-temp">30°C</p>
+                    <p class="weather-rain">Lluvia: Alta</p>
+                </div>
+                <div class="weather-card">
+                    <h3>Junio</h3>
+                    <p class="weather-temp">31°C</p>
+                    <p class="weather-rain">Lluvia: Alta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-image">
+                    <img src="https://ik.imagekit.io/luciasanz/vanderas2.png" alt="Banderas de Jamaica">
+                </div>
+                <div class="info-content">
+                    <h2>¿Sabías que...?</h2>
+                    <p><strong>Jamaica es un destino durante todo el año:</strong> Con una temperatura promedio de 27°C, Jamaica disfruta de un clima tropical ideal para turistas en cualquier época.</p>
+                    <p><strong>La mejor época para visitar:</strong> De diciembre a abril es la temporada seca, perfecta para disfrutar de las playas y actividades al aire libre.</p>
+                    <p><strong>Temporada de huracanes:</strong> De junio a noviembre es la temporada de huracanes en el Caribe. Sin embargo, Jamaica cuenta con excelentes sistemas de alerta y protocolos de seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hurricane-images-section">
+        <div class="container">
+            <h2 class="section-title">Preparación ante Huracanes</h2>
+            <div class="hurricane-single-grid">
+                <div class="hurricane-photo">
+                    <img src="https://ik.imagekit.io/luciasanz/808x539_cmsv2_019b0a43-bc3b-577b-b33e-7f14cc0cb843-9529215.jpg.webp" alt="Preparativos ante huracanes en Jamaica">
+                </div>
+                <div class="hurricane-text">
+                    <h3>Preparativos y Prevenciones</h3>
+                    <p>En Jamaica la seguridad de visitantes y residentes es una prioridad. Contamos con sistemas de alerta temprana, infraestructuras resistentes y protocolos de evacuación bien establecidos para proteger a todos durante la temporada de huracanes.</p>
+                    <ul class="hurricane-list">
+                        <li><strong>Monitorización y alertas:</strong> Servicio meteorológico local y notificaciones oficiales.</li>
+                        <li><strong>Protocolos y refugios:</strong> Planes de emergencia, rutas de evacuación y centros de apoyo.</li>
+                        <li><strong>Hoteles y transporte:</strong> Alojamiento y servicios cuentan con procedimientos de seguridad.</li>
+                        <li><strong>Asistencia al turista:</strong> Líneas y personal disponibles para ayudar 24/7.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jamaica-png-section">
+        <div class="container">
+            <img src="https://ik.imagekit.io/luciasanz/jamaica%20tipo%20png.png" alt="Jamaica" class="floating-image">
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 turismo jamaica. Welcome to jamaica.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
